@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'black',
 
     /*
     |--------------------------------------------------------------------------
@@ -104,24 +104,28 @@ return [
     | should have a text and and a URL. You can also specify an icon from
     | Font Awesome. A string instead of an array represents a header in sidebar
     | layout. The 'can' is a filter on Laravel's built in Gate functionality.
-    |
+    | array multidimensional
+    | icon https://fontawesome.com/icons?d=gallery
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'Página Principal',
+        /*
+    |níveis de acesso
+    */
         [
             'text' => 'Blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Pages',
+            'text'        => 'Home',
             'url'         => 'admin/pages',
-            'icon'        => 'file',
+            'icon'        => 'home',
             'label'       => 4,
             'label_color' => 'success',
         ],
-        'ACCOUNT SETTINGS',
+        'CONFIGURAÇÕES DA CONTA',
         [
             'text' => 'Profile',
             'url'  => 'admin/settings',
